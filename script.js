@@ -18,9 +18,10 @@ function updateCountdown() {
 
     days.innerHTML = days 
     hours.innerHTML = hour < 10 ? '0' + hour : h;
-    minutes.innerHTML = 
+    minutes.innerHTML = minute < 10 ? '0' + minute : minute;
+    seconds.innerHTML = second < 10 ? '0' + second : second;
 
 
 }
 
-setInterval(updateCountdown, 1000)
+setInterval(updateCountdown, 1000);
