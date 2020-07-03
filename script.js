@@ -12,7 +12,15 @@ function updateCountdown() {
     const difference = newYearTime - currentTime;
 
     const days = Math.floor(difference / 1000 / 60 / 60 / 24);
-    
+    const hour = Math.floor(difference / 1000 / 60 / 60) % 24;
+    const minute = Math.floor(difference / 1000 / 60) % 60;
+    const second = Math.floor(difference / 1000) % 60;
+
+    days.innerHTML = days 
+    hours.innerHTML = hour < 10 ? '0' + hour : h;
+    minutes.innerHTML = 
+
+
 }
 
-updateCountdown()
+setInterval(updateCountdown, 1000)
